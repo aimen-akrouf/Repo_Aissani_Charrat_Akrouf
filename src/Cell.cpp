@@ -80,5 +80,5 @@ bool Cell::isFlagged()
 }
 void Cell::flag()
 {
-
+//
 }
