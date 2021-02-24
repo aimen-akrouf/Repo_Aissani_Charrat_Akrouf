@@ -76,7 +76,7 @@ bool Cell::hasNeighbours()
 }
 bool Cell::isFlagged()
 {
-    return false;
+    return true;
 }
 void Cell::flag()
 {
