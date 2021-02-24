@@ -2,6 +2,7 @@
 #include <iostream>
 #include <time.h>
 #include <ncurses.h>
+
 Game::Game(int x, int y)
 {
     _NumberOfMines = 0;
@@ -112,7 +113,7 @@ int Game::getX()
 {
     return _ResX;
 }
-int Game::getY()
+int Game::getY() // 2nd dev game
 {
     return _ResY;
 }
