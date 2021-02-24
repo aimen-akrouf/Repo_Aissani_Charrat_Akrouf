@@ -1,6 +1,7 @@
 #include "Cell.h"
 #include <iostream>
 
+
 Cell::Cell()
 {
     _Mine = false;
@@ -10,15 +11,18 @@ Cell::Cell()
 Cell::~Cell()
 {
 
+
 }
 void Cell::addMine(bool mine)
 {
 mine=true;
 }
+
 int Cell::getNeighbours()
 {
     return _Neighbours;
 }
+
 void Cell::getNeighbours(std::vector<std::vector<Cell>> &grid, int x, int y)
 {
     _Neighbours = 0;
@@ -36,10 +40,12 @@ void Cell::getNeighbours(std::vector<std::vector<Cell>> &grid, int x, int y)
         }
     }
 }
+
 bool Cell::isDiscovered()
 {
   return _Discovered;
 }
+
 bool Cell::isAMine()
 {
     if (_Mine)
@@ -67,6 +73,7 @@ bool Cell::discover(std::vector<std::vector<Cell>> &grid, int x, int y)
     }
     return false;
 }
+
 bool Cell::hasNeighbours()
 {
     if (_Neighbours)
@@ -74,6 +81,7 @@ bool Cell::hasNeighbours()
     if (!_Neighbours)
     return false;
 }
+
 bool Cell::isFlagged()
 {
     return true;
